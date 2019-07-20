@@ -2,7 +2,6 @@ def solution(phone_book) :
     answer = True
 
     phone_book.sort()
-
     for x in phone_book :
         newBook = set(str(i)[:len(str(x))] for i in phone_book if i > x)
         if str(x) in newBook:
